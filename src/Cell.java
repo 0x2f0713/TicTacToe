@@ -7,13 +7,14 @@ public class Cell {
     Cell() {
         this.cellStatus = CellStatus.Blank;
     }
+
     public boolean setCellStatus(CellStatus cellStatus) {
-        if(this.cellStatus == CellStatus.Blank) {
+        if (this.cellStatus == CellStatus.Blank) {
             this.cellStatus = cellStatus;
             return true;
         }
         System.out.println("Invalid!");
         return false;
-        
+
     }
 }

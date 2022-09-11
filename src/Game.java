@@ -1,3 +1,4 @@
+
 /**
  * Created by CCNE on 09/09/2022.
  */
@@ -26,9 +27,9 @@ public class Game {
             int row = scanner.nextInt();
             int col = scanner.nextInt();
             step = board.setCellStatus(row, col, turn);
-            if(step) {
+            if (step) {
                 moveCount++;
-                running = board.checkGameOver(row,col,turn, moveCount);
+                running = board.checkGameOver(row, col, turn, moveCount);
                 turn = !turn;
                 board.printBoard();
             }
